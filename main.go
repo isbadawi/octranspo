@@ -41,9 +41,7 @@ func main() {
 					fmt.Println("usage: octranspo stop <number>")
 					return
 				}
-
 				stopCommandHandler(c.Args()[0])
-
 			},
 		},
 	}
