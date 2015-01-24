@@ -18,7 +18,7 @@ func stopCommandHandler(stop string) {
 	for _, route := range routes {
 		fmt.Printf("%v %v (%v): ", route.Number, route.Heading, route.Direction)
 		if len(route.Trips) == 0 {
-			fmt.Printf("no more trips today.")
+			fmt.Printf("no upcoming trips.")
 		}
 		fmt.Println()
 		for _, trip := range route.Trips {
